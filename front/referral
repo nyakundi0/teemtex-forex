@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>REFER A FRIEND</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/static/assets/css/style4.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background */
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Make body take full height */
+        }
+
+        .header {
+            padding: 20px;
+            color: aliceblue;
+            background-color: black; /* Darker header */
+            display: flex;
+            justify-content: space-between; /* Space between title and button */
+            align-items: center;
+            border-bottom: 2px solid #007bff;
+        }
+
+        .referral-section {
+            flex-grow: 1; /* Allow section to grow and take available space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .icon-box {
+            background: black;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s;
+            width: 100%;
+            max-width: 400px; /* Limit width */
+        }
+
+        .icon-box:hover {
+            transform: scale(1.05);
+        }
+        p {
+        color: white;
+        }
+        h4 {
+            color: #007bff; /* Customize heading color */
+            margin-bottom: 15px;
+        }
+
+        .referral-input {
+            background-color: #e9ecef;
+            color: black;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: auto; /* Push footer to the bottom */
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div>REFER A FRIEND</div>
+        <a href="referrals" class="btn btn-primary">Referrals</a>
+    </div>
+
+    <!-- Referral Program Section -->
+    <div class="referral-section">
+        <div class="icon-box">
+            <h4>Referral Program</h4>
+            <p>Refer a friend and get 10% of their first trade!</p>
+            <input type="text" class="referral-input" value="https://teemtex.com/signup" id="myInput" readonly>
+            <button onclick="copyLink()" class="btn btn-primary">Copy Link</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Copyright <strong><span>TeemTex</span></strong>. All Rights Reserved | Trade at your comfort zone
+    </footer>
+
+    <script>
+        function copyLink() {
+            const copyText = document.getElementById("myInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            navigator.clipboard.writeText(copyText.value)
+                .then(() => {
+                    alert("Link copied to clipboard!");
+                })
+                .catch(err => {
+                    alert("Failed to copy link: " + err);
+                });
+        }
+    </script>
+</body>
+
+</html>
+

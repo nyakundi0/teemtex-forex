@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="dns-prefetch" href="https://d1egza9ueiv2hi.cloudfront.net">
+        <link rel="preconnect" href="https://d1egza9ueiv2hi.cloudfront.net">
+        <link rel="preconnect" href="https://d1egza9ueiv2hi.cloudfront.net" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="preload stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap">
+        <noscript>
+            <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+        </noscript>
+    <link rel="preload" href="https://d1egza9ueiv2hi.cloudfront.net/load/icons/12749/fonts/switch-markets.woff" as="font" type="font/woff"
+          crossorigin>
+        <link rel="preload stylesheet" as="style" href="https://d1egza9ueiv2hi.cloudfront.net/vendor/splide/splide.min.css" type="text/css">
+                <link rel="preload stylesheet" as="style" href="https://d1egza9ueiv2hi.cloudfront.net/load/css/12749/trading-conditions.css" media="all" type="text/css">
+    <link rel="preload stylesheet" as="style" href="https://d1egza9ueiv2hi.cloudfront.net/load/icons/12749/styles.css" type="text/css">
+                <script
+                src="https://js-de.sentry-cdn.com/5469f0265c033a5e5dbe2f3b56613050.min.js"
+                crossorigin="anonymous"
+        ></script>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicons/favicon-57x57.png"><link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicons/favicon-114x114.png"><link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicons/favicon-72x72.png"><link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicons/favicon-144x144.png"><link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/favicons/favicon-60x60.png"><link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicons/favicon-120x120.png"><link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/favicons/favicon-76x76.png"><link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicons/favicon-152x152.png"><link rel="icon" type="image/png" href="/img/favicons/favicon-196x196.png" sizes="196x196"><link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16"><link rel="icon" type="image/png" href="/img/favicons/favicon-128x128.png" sizes="128x128"><link rel="shortcut icon" href="/img/favicons/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png"><meta name="application-name" content="&nbsp;">
+<meta name="description" content="The TeemTex trading environment offers flexible trading conditions and competitive pricing plans for traders around the world.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Trading Conditions - TeemTex">
+<meta property="og:description" content="The TeemTex trading environment offers flexible trading conditions and competitive pricing plans for traders around the world.">
+<meta property="og:image" content="https://www.switchmarkets.com/img/meta/trading_conditions.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Trading Conditions - TeemTex">
+<meta name="twitter:description" content="The TeemTex trading environment offers flexible trading conditions and competitive pricing plans for traders around the world.">
+<meta name="twitter:image" content="https://www.switchmarkets.com/img/meta/trading_conditions.jpg">
+<link rel="canonical" href="https://www.switchmarkets.com/trading-conditions">
+<title>Trading Conditions - TeemTex</title>
+    <script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KDDRP6L');
+</script><script id="auc_switchmarkets" src="https://scripts.prdredir.com/scripts/auc_switchmarkets.js" async>
+</script><script type="application/javascript">
+(function (d, b, t) {
+    "use strict";
+    var s = document.createElement(t), c = (d.getElementsByTagName(t)[0]);
+    s.setAttribute("src", "https://adscool.net/resources/content/switchmarkets.js");
+    s.setAttribute("async", true);
+    if (c) {
+        var n = c.parentNode; n.insertBefore(s, c);
+    } else {
+        b.appendChild(s);
+    }
+})(document, document.body, "SCRIPT");
+</script><link rel="preconnect" href="https://cdp.switchmarkets.com/"><script src="https://cdp.switchmarkets.com/switchmarkets.min.js"></script>        <script type="text/javascript">(function(o){var b="https://apenterprise.io/anywhere/",t="fb393882019240a0a901746d5a4f0835b896dd0ea01e404fad2fced94fce579e",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2087558,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<script src="https://d1egza9ueiv2hi.cloudfront.net/js/vimeo-placeholder.min.js"></script>
+</head>
+<body class="preload"  data-country-eu="true" >
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDDRP6L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="pageWrap">
+    <section id="internal-hero-content" class="hero">
+        <header class="nav-bar ">
+    <div class="container d-flex align-items-center justify-content-between">
+        <div class="menu-container d-flex align-items-center">
+            <h1>TeemTex</h1>
+            <div class="menu justify-content-end">
+                                    <ul class="clearfix">
+    </div>
+</header>
+        <div class="content container">
+            <h1 class="heading text-center">Trading conditions</h1>
+            <p class="hero-section-text">The TeemTex trading environment offers flexible trading conditions and competitive pricing plans for traders around the world. It is ideal for ambitious traders of all markets who demand fast execution speed and low spreads without any hidden costs.</p>
+            <div class="grid grid-2">
+                <div>
+                    <a href="/signup" class="btn btn-green">Create Live Account</a>
+                </div>
+            </div>
+        </div>
+        <picture>
+            <source srcset="https://d1egza9ueiv2hi.cloudfront.net/img/hero-images/trader-on-laptop.webp, https://d1egza9ueiv2hi.cloudfront.net/img/hero-images/trader-on-laptop@2x.webp 2x" type="image/webp">
+            <source srcset="https://d1egza9ueiv2hi.cloudfront.net/img/hero-images/trader-on-laptop.png, https://d1egza9ueiv2hi.cloudfront.net/img/hero-images/trader-on-laptop@2x.png 2x" type="image/png">
+            <img src="https://d1egza9ueiv2hi.cloudfront.net/img/hero-images/trader-on-laptop@2x.png" alt="trader on laptop checking conditions" class="hero-bg-img">
+        </picture>
+        <div class="hero-filter"></div>
+    </section>
+    <section class="bg-light conditions">
+        <div class="container">
+                <div>
+
+                <div>
+                    <h3>Trading Hours</h3>
+                    <p>With TeemTex, there’s always a market to trade. Any time, any day, without any exceptions.The minimum trading hours are 24hrs.</p>
+                </div>
+<div>
+                    <h3>Trading Instruments</h3>
+                    <p>Wide range of financial markets right at your fingertips. Trade and invest in nearly 2,000 markets worldwide with TeemTex at just the click of a button.</p>
+                </div>
+                <div>
+                    <h3> Deposit</h3>
+                    <p> At TeemTex, funds can be deposited using a number of methods, including credit and debit card,  online banking and bank wire transfer and the commission is always 0%.</p>
+                </div>
+                <div>
+                    <h3>Withdrawals</h3>
+                    <p>Fast and easy withdrawals with no limits using one of the many options provided in less than three days! Withdraw as much as you want, whenever you want - just the way it should be!</p>
+                </div>
+                <div>
+                    <h3>Trading Platforms</h3>
+                    <p>With TeemTex you have the opportunity to trade on the award-winning MetaTrader 4 platform. All you need to do is hit the download button and you’ll be set up in no time.</p>
+                </div>
+                <div>
+                    <h3>Trading tools</h3>
+                    <p>Access a wide range of free and premium trading tools needed to trade the markets. From Forex Economic Calendar to Support & Resistance EA (MT4), we’ve got it all!</p>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <p>Contact TeemTex support team 24/7 via email teemtex001@gmail.com or by chatting with us on our 24/7 live chat in the bottom right corner. We’re all ears!</p>
+                </div>
+        </div>
+    </section>
+                                            <section class="steps">
+    <div class="bg-wave">
+        <div class="container position-relative pb-7">
+            <h2>Ready to make a Deposit? Start Trading with TeemTex today!</h2>
+                <p>Open an account in 4 simple steps…</p>
+                        <div class="grid grid-2">
+                <div class="step-1">
+                    <img src="https://d1egza9ueiv2hi.cloudfront.net/img/icons/01.svg" alt="" width="112" height="75">
+                    <p>Follow this link to open a Live Account</p>
+                    <a href="/signup" 
+                                                    target="_blank"
+                                                class="btn btn-green">Open Account</a>
+                </div>
+                <div class="step-2">
+                    <img src="https://d1egza9ueiv2hi.cloudfront.net/img/icons/02.svg" alt="" width="124" height="75">
+                    <p>Fill in the questionnaire to complete your profile</p>
+                </div>
+                <div class="step-3">
+                    <img src="https://d1egza9ueiv2hi.cloudfront.net/img/icons/03.svg" alt="" width="126" height="75">
+                    <p>Upload your documents for verification purposes</p>
+                </div>
+                <div class="step-4">
+                    <img src="https://d1egza9ueiv2hi.cloudfront.net/img/icons/04.svg" alt="" width="136" height="75">
+                    <p>You’re ready to deposit and start trading!</p>
+                </div>
+            </div>
+            <img src="https://d1egza9ueiv2hi.cloudfront.net/img/icons/line.svg" alt="" class="line">
+        </div>
+    </div>
+</section>
+<section class="comment-area pt-4 pb-5" id="testimonials-section">
+    <div class="content-wrapper container-lg d-flex flex-wrap justify-content-around align-items-center pr-1 pl-1">
+        <div class="text-left">
+            <h2 class="font-weight-medium">Join our happy traders</h2>
+        </div>
+        <div class="d-flex flex-column align-items-centre testimonial-slider">
+            <span class="testimonial">
+                <div id="trustpilot-splide" class="splide mt-3">
+                    <div class="splide__track trustpilot-reviews">
+                        <ul class="splide__list">
+                                                    <li class="splide__slide">
+                                <div class="slick-content">
+                                    <div class="testimonial-wrapper">
+                                        <i class="icon icon-quote"></i>
+                                        <span class="text-small mt-1 d-block">Christopher Faron</span>
+                                        <p class="mt-2 text-md font-weight-bold">
+                                        &#8220;Great broker, fully recommend.&#8221;
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="splide__slide">
+                                <div class="slick-content">
+                                    <div class="testimonial-wrapper">
+                                        <i class="icon icon-quote"></i>
+                                        <span class="text-small mt-1 d-block">Benaiah Hlebeya</span>
+                                        <p class="mt-2 text-md font-weight-bold">
+                                        &#8220;The best broker care for the clients&#8221;
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="splide__slide">
+                                <div class="slick-content">
+                                    <div class="testimonial-wrapper">
+                                        <i class="icon icon-quote"></i>
+                                        <span class="text-small mt-1 d-block">Richard</span>
+                                        <p class="mt-2 text-md font-weight-bold">
+                                        &#8220;An exceptional broker&#8221;
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="splide__slide">
+                                <div class="slick-content">
+                                    <div class="testimonial-wrapper">
+                                        <i class="icon icon-quote"></i>
+                                        <span class="text-small mt-1 d-block">shaanshii</span>
+                                        <p class="mt-2 text-md font-weight-bold">
+                                        &#8220;Highly Recommend&#8221;
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="splide__slide">
+                                <div class="slick-content">
+                                    <div class="testimonial-wrapper">
+                                        <i class="icon icon-quote"></i>
+                                        <span class="text-small mt-1 d-block">Pill Taker</span>
+                                        <p class="mt-2 text-md font-weight-bold">
+                                        &#8220;Really good&#8221;
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="splide__slide">
+                                <div class="slick-content">
+                                    <div class="testimonial-wrapper">
+                                        <i class="icon icon-quote"></i>
+                                        <span class="text-small mt-1 d-block">Christopher Faron</span>
+                                        <p class="mt-2 text-md font-weight-bold">
+                                        &#8220;Very happy with this broker, decent spreads, pretty reliable. The free VPS is such a great deal. Fully recommend.&#8221;
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                                                </ul>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div> 
+    <picture>
+        <source srcset="https://d1egza9ueiv2hi.cloudfront.net/img/chat.webp" type="image/webp">
+        <img src="https://d1egza9ueiv2hi.cloudfront.net/img/chat.jpg" width="1300" height="495" loading="lazy" alt="user faces" class="testimonial-bg"/>
+    </picture>
+    <div class="filter"></div>
+    <span class="chat-arrow"></span>
+</section>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new Splide('#trustpilot-splide', {
+                type: 'loop',
+                perPage: 1,
+                flickMaxPages: 1,
+                rewind : true,
+                autoplay: true,
+                interval: 5000,
+                easing: "ease",
+                pagination: false,
+                arrows: true,
+                gap: 10,
+                throttle: 300,
+                breakpoints: {
+                    767: {
+                        pagination: true,
+                        arrows: false,
+                    }
+                }
+            }).mount();
+        });
+    </script>
+ <div class="base-footer">
+        <div class="container d-flex flex-wrap justify-content-between">
+            <span>Copyright &#169; 2020-2024 TeemTex International PTE Ltd | All rights reserved.</span>
+                <h1>Terms and Conditions</h1><br>
+                These Terms and Conditions ("Terms") govern your use of the services provided by TeemTex, an online forex trading broker. By accessing or using our services, you agree to be bound by these Terms. Please read them carefully.<br>
+
+<h2>1. Definitions </h2> <br>
+Company: Refers to TeemTex, including all subsidiaries and affiliates.<br>
+Client/Customer: Any person or entity that registers for an account or uses the trading services provided by the Company.<br>
+Platform: The online forex trading system provided by TeemTex, including all associated software, websites, and applications.<br>
+Account: The account created by the Client for the purpose of trading forex and other financial instruments through the Company’s Platform.<br>
+Services: The online forex trading services provided by the Company, including but not limited to trading, account management, and customer support.<br>
+<h2>2. Acceptance of Terms </h2><br>
+By registering for an account, accessing the Platform, or using the Services, you acknowledge that you have read, understood, and agree to be bound by these Terms, as well as any other agreements, disclosures, and documentation provided by the Company.<br>
+
+<h2> 3. Registration and Account Management </h2><br>
+3.1 Eligibility: You must be at least 18 years old or of legal age as defined by the laws of your country of residence to register for an account. By registering, you confirm that you have the legal capacity to enter into a binding contract.<br>
+3.2 Registration Process: To register, you must provide accurate and complete information as requested by the Company. You agree to update your information promptly if it changes.<br>
+3.3 Account Security: You are responsible for maintaining the confidentiality of your account login credentials. You agree to notify the Company immediately if you suspect unauthorized use of your account.<br>
+3.4 Account Types: The Company may offer various account types with different features, requirements, and benefits. You agree to adhere to the specific terms applicable to your account type.<br>
+<h2> 4. Trading and Execution </h2><br>
+4.1 Trading Platform: The Company provides access to an online trading platform where Clients can trade forex and other financial instruments. The Platform is provided "as is" and may be subject to technical limitations or downtime.<br>
+4.2 Orders and Execution: All orders placed through the Platform are considered binding. The Company will use reasonable efforts to execute orders promptly but does not guarantee execution at the requested price due to market conditions, technical issues, or other factors beyond its control.<br>
+4.3 Trading Hours: The Company operates 24/7. The Company may alter these hours without prior notice due to holidays, market events, or technical maintenance.<br>
+4.4 Leverage and Margin: Trading on the Platform may involve the use of leverage, which can magnify your profits. You are responsible for ensuring that you maintain sufficient margin in your account to support your positions. The Company reserves the right to close positions without notice if margin requirements are not met.<br>
+<h2> 5. Deposits and Withdrawals </h2><br>
+5.1 Deposit Methods: Clients may fund their accounts using the methods specified by the Company, such as bank transfer, credit/debit card, or e-wallets. The Company may impose limits on the minimum but no maximum deposit amounts.<br>
+5.2 Withdrawals: Clients may request withdrawals of available funds through the Platform. The Company will process withdrawal requests promptly, but processing times may vary depending on the payment method and other factors.<br>
+5.3 Fees: The Company may charge fees for deposits but no withdrawal fees. These fees will be disclosed to the Client before the transaction is processed.<br>
+5.4 Currency Conversion: If a deposit or withdrawal involves currency conversion, it will be processed at the prevailing exchange rate provided by the Company. The Client may incur additional charges for currency conversion.<br>
+<h2> 6.Returns after each trading session </h2><br>
+ TeemTex is an automated crypto trading platform that trades crypto on it's clients behalf and guarantees returns after each trading session.
+<h2> 7. Client Responsibilities </h2><br>
+7.1 Compliance with Laws: The Client is responsible for ensuring that their use of the Platform and Services complies with all applicable laws and regulations, including tax obligations.<br>
+7.2 Prohibited Activities: The Client agrees not to engage in any activities that are illegal, fraudulent, or abusive, including but not limited to market manipulation, unauthorized trading practices, or misuse of the Platform.<br>
+7.3 Reporting and Disclosure: The Client must promptly report any issues or discrepancies in their account, trading activity, or transactions to the Company.<br>
+<h2> 8. Risk Disclosure and Acknowledgment </h2><br>
+8.1 General Risk: The Client acknowledges that trading forex and other financial instruments is highly speculative.<br>
+8.2 Market Volatility: Market conditions can be volatile and unpredictable, and prices may fluctuate rapidly. The Client understands that he shall earn an interest between 6%-12% per day.<br>
+8.3  Guarantee: The Company does guarantee profits or the avoidance of losses. The Company is solely responsible for their trading decisions and the results thereof since it is insured.<br>
+<h2> 9. Limitation of Liability </h2><br>
+9.1 Indirect Damages: The Company shall   be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with the use of the Platform or Services.<br>
+9.2 Maximum Liability: The Company’s total liability to the Client for any claims arising from the use of the Services shall cover total amount deposited by the Client in their account.<br>
+9.3 Force Majeure: The Company shall not be liable for any failure to perform its obligations due to circumstances beyond its control, including but not limited to acts of God, war, terrorism, or technical failures.<br>
+<h2> 10. Intellectual Property </h2><br>
+10.1 Ownership: All intellectual property rights in the Platform and Services, including but not limited to software, trademarks, and content, are owned by the Company or its licensors.<br>
+10.2 Use of Intellectual Property: The Client is granted a limited, non-exclusive, non-transferable license to use the Platform for trading purposes only. The Client may not copy, modify, or distribute any part of the Platform without prior written consent from the Company.<br>
+<h2> 11. Privacy and Data Protection </h2><br>
+11.1 Data Collection: The Company collects and processes personal data in accordance with its Privacy Policy. The Client consents to the collection, use, and disclosure of their personal data as described in the Privacy Policy.<br>
+11.2 Security: The Company implements reasonable security measures to protect the Client’s personal data and account information. However, the Client acknowledges that no system is completely secure, and the Company cannot guarantee the absolute security of data.<br>
+<h2> 12. Termination and Suspension </h2><br>
+12.1 Termination by Client: The Client may close their account at any time by providing written notice to the Company, subject to the settlement of all outstanding obligations.<br>
+12.2 Termination by Company: The Company reserves the right to terminate or suspend the Client’s account, with or without notice, if the Client breaches these Terms, engages in prohibited activities, or if required by law or regulatory authorities.<br>
+12.3 Effect of Termination: Upon termination, the Client must cease all use of the Platform and Services. The Company will process any remaining funds in the account in accordance with its withdrawal policies.<br>
+<h2> 13. Amendments </h2><br>
+The Company reserves the right to amend these Terms at any time. Any changes will be effective immediately upon posting on the Company’s website or otherwise notifying the Client. The Client’s continued use of the Platform and Services after such changes constitutes acceptance of the amended Terms.<br>
+
+<h2> 14. Governing Law and Dispute Resolution </h2><br>
+14.1 Governing Law: These Terms shall be governed by and construed in accordance with the laws of [Country/State].<br>
+14.2 Dispute Resolution: Any disputes arising out of or in connection with these Terms shall be resolved through [Arbitration/Mediation] in [Country/State]. The decision of the arbitrator shall be final and binding on both parties.<br>
+<h2> 15. Miscellaneous </h2><br>
+15.1 Severability: If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.<br>
+15.2 Entire Agreement: These Terms<br>
+            </div>
+    </div>
+</footer>
+</div>
+    <div class="cookie-consent js-cookie-consent">
+    <div class="cookie-consent__content" lang="en">
+        <h6 lang="en" class="cookie-consent__content__title">This website uses cookies</h6>
+        <div lang="en" class="cookie-consent__content__text">We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</div>
+    </div>
+    <div class="cookie-consent__buttons" lang="en">
+        <button lang="en" class="btn btn-deny js-cookie-consent-deny">Deny</button>
+        <button class="btn btn-blue js-cookie-consent-accept" lang="en">Accept All</button>
+    </div>
+</div>
+    <script src="https://d1egza9ueiv2hi.cloudfront.net/vendor/splide/splide.min.js"></script>
+    <script async defer src="https://www.google.com/recaptcha/api.js?render=6LcH_L8aAAAAAOj9rI5bdYXDjXgvAnUYVqWPXpcY"></script>
+</body>
+</html>

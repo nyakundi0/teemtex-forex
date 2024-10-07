@@ -1,0 +1,23 @@
+cffi==1.15.1
+chardet==4.0.0
+cryptography==36.0.2  # Downgraded to be compatible with Python 3.6
+distlib==0.3.8
+filelock==3.4.0
+idna==3.4
+importlib-metadata==3.10.0
+importlib-resources==5.4.0  # Downgraded to a compatible version
+platformdirs==2.4.0
+ply==3.11
+pycparser==2.21
+pyOpenSSL==21.0.0  # Downgraded to be compatible with cryptography 36.x
+pyparsing==3.0.9
+PySocks==1.7.1
+python-dateutil==2.8.2
+pyudev==0.22.0
+PyYAML==6.0
+requests==2.27.1
+six==1.16.0
+typing_extensions==3.10.0.2
+urllib3==1.26.15
+virtualenv==20.10.0  # Downgraded to a compatible version
+zipp==3.6.0  # Downgraded to a compatible version

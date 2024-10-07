@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>STAFF DASHBOARD</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- Additional Styles -->
+    <link rel="stylesheet" type="text/css" href="/static/css/roboto-font.css">
+    <link rel="stylesheet" type="text/css" href="/static/fonts/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/login2.css"/>
+    <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/static/assets/css/style3.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: black;">
+      <a class="navbar-brand" href="#">STAFF ONLY</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Action 1</a>
+              <a class="dropdown-item" href="#">Action 2</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Services Section -->
+    <section class="services">
+      <div class="container">
+        <div class="row">
+          <!-- User Search -->
+          <div class="col-md-6 col-lg-3">
+            <div class="icon-box">
+              <p>Search User</p>
+              <form class="form-inline" action="search_user" method="post">
+                <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                <input class="form-control mr-sm-2" name="account" type="number" placeholder="Account" required>
+                <button class="btn btn-primary" type="submit">User ID Search</button>
+              </form>
+              <!-- Additional Search Forms -->
+            </div>
+          </div>
+          
+          <!-- Other Actions -->
+          <div class="col-md-6 col-lg-3">
+            <div class="icon-box">
+              <a href="pay_trades" class="btn btn-primary">Pay Trades</a>
+              <a href="pay_trades48" class="btn btn-primary">Pay Trades 48</a>
+              <a href="pay_trades4" class="btn btn-primary">Pay 4 Days</a>
+              <!-- More buttons here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h4>Our Newsletter</h4>
+              <p>Receive news and updates on time.</p>
+            </div>
+            <div class="col-lg-6">
+              <form action="#" method="post">
+                <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                <input type="email" name="email" placeholder="Enter your email">
+                <input type="submit" value="Subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong>Teemtex</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Trade at your comfort zone
+        </div>
+      </div>
+    </footer>
+    
+    <!-- JS Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

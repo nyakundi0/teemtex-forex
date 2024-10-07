@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Profile Account - TeemTex</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/css/style3.css">
+    <link rel="stylesheet" href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css">
+
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header style="background-color: black; padding: 20px;">
+      <h4 class="text-white">TeemTex</h4>
+      <a href="Dashboard.php" class="btn btn-primary" style="position: absolute; right: 20px; top: 20px;">Dashboard</a>
+    </header>
+
+    <!-- Profile Section -->
+    <main class="container mt-5">
+      <div class="row">
+
+        <!-- Profile Information Section -->
+        <div class="col-md-6">
+          <div class="card text-white bg-dark mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Account Information</h5>
+              <p class="card-text">Balance: <strong>$<?php echo $balance; ?></strong></p>
+              <p class="card-text">Balance (Ksh): <strong>Ksh<?php echo $balance_ksh; ?></strong></p>
+              <p class="card-text">Profit: <strong>$<?php echo $profit; ?></strong></p>
+              <p class="card-text">Phone: <strong><?php echo $phone; ?></strong></p>
+              <p class="card-text">Inviter: <strong><?php echo $inviter; ?></strong></p>
+              <p class="card-text">Country: <strong><?php echo $country; ?></strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Referrals and Transactions Section -->
+        <div class="col-md-6">
+          <div class="card text-white bg-dark mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Referrals & Transactions</h5>
+              <p class="card-text">Referrals: <strong><?php echo $referrals; ?></strong></p>
+              <p class="card-text">Referral Income: <strong>$<?php echo $referral_income; ?></strong></p>
+              <p class="card-text">Deposits: <strong>$<?php echo $deposits; ?></strong></p>
+              <p class="card-text">Email Code: <strong><?php echo $email_code; ?></strong></p>
+              <p class="card-text">Account Number: <strong><?php echo $account_number; ?></strong></p>
+              <p class="card-text">Email: <strong><small><?php echo $email; ?></small></strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Account Activity Section -->
+        <div class="col-md-6">
+          <div class="card text-white bg-dark mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Account Activity</h5>
+              <!-- Date Joined -->
+              <p class="card-text">Date Joined: <strong><?php echo date('F j, Y', strtotime($reg_date)); ?></strong></p>
+
+              <!-- Last Login -->
+              <p class="card-text">Last Login: <strong><?php echo date('F j, Y, g:i a', strtotime($last_login)); ?></strong></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-center" style="background-color: black; padding: 20px; color:white;">
+    <p>&copy; 2024 TeemTex. All Rights Reserved | Trade at your comfort zone.</p>
+    </footer>
+
+    <!-- Bootstrap & JS Libraries -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Deposit - TeemTex</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden; /* Prevent any horizontal overflow */
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f4f6f9;
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      background-color: black;
+    }
+
+    .header div {
+      padding: 15px;
+      color: aliceblue;
+      background-color: black;
+      text-align: center;
+    }
+
+    .dashboard-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    .deposit-section {
+      padding: 50px 0;
+      background-color: white;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .col-md-4 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .icon-box {
+      background-color: #fff;
+      padding: 30px;
+      margin: 15px 0;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 300px;
+    }
+
+    .icon-box img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .icon-box:hover {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      margin-top: auto;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .modal-content {
+      background: #fff;
+      border-radius: 10px;
+      color: black;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="text-left">Deposit</div>
+    <div class="text right">
+      <a href="Dashboard.php" style="position: absolute; right: 10px; top: 15px; color: white;" class="btn btn-primary">Dashboard</a>
+    </div>
+  </div>
+
+  <div class="container deposit-section">
+    <div class="row justify-content-center no-gutters">
+      <div class="col-md-4">
+        <div class="icon-box">
+          <h5>Mpesa</h5>
+          <img src="/images/mpesa.jpg" alt="Mpesa">
+          <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Deposit</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-box">
+          <h5>PayPal</h5>
+          <img src="/images/Pay.jpg" alt="PayPal">
+          <a class="btn btn-primary" href="https://paypal.com">Deposit</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-box">
+          <h5>Pesapal</h5>
+          <img src="/images/pesapal.jpg" alt="Pesapal">
+          <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Deposit</a>
+        </div>
+      </div>
+      <!-- New KCB Buni Section -->
+      <div class="col-md-4">
+        <div class="icon-box">
+          <h5>KCB Buni</h5>
+          <img src="/images/KCB.jpg" alt="KCB Buni">
+          <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">Deposit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mpesa Modal -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel1">Mpesa Deposit</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form action="mpesa" method="post">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="0722000000" required>
+            </div>
+            <div class="form-group">
+              <label for="amount">Amount (Ksh)</label>
+              <input type="number" class="form-control" id="amount" name="amount" placeholder="0.0" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Deposit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pesapal Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel2">Pesapal Deposit</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" value="SamplePesapalAddress" readonly>
+          <button onclick="copyToClipboard()" class="btn btn-primary mt-2">Copy Address</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KCB Buni Modal (You can customize this modal as needed) -->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel3">KCB Buni Deposit</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form action="kcb_buni" method="post">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="0722000000" required>
+            </div>
+            <div class="form-group">
+              <label for="amount">Amount (Ksh)</label>
+              <input type="number" class="form-control" id="amount" name="amount" placeholder="0.0" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Deposit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; Copyright <strong>TeemTex</strong>. All Rights Reserved. Trade at your comfort zone.
+  </footer>
+
+  <!-- Bootstrap JS and Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Copy Function for Pesapal Modal -->
+  <script>
+    function copyToClipboard() {
+      var copyText = document.querySelector('.modal-body input');
+      copyText.select();
+      document.execCommand('copy');
+      alert('Address copied: ' + copyText.value);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 160vh;
+            margin: 0;
+            padding: 0px; /* Ensures padding on mobile */
+        }
+        .auth-wrapper {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%; /* Responsive width */
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        h4 {
+            text-align: center; /* Centering the heading */
+            margin-bottom: 10px;
+            color: #333;
+        }
+        p {
+            text-align: center; /* Centering the paragraph */
+            margin-bottom: 20px;
+            color: #666;
+        }
+        label {
+            font-size: 14px;
+            color: #666;
+            display: block; /* Ensures labels are block elements */
+            margin: 10px 0 5px; /* Adds space above labels */
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 20px; /* Space below inputs for clarity */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input::placeholder {
+            font-size: 12px;
+            color: #999;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #requirements {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .invalid {
+            color: red;
+        }
+        .valid {
+            color: green;
+        }
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: none; /* Remove default border */
+            height: 1px; /* Height of the line */
+            background-color: #e0e0e0; /* Color of the line */
+            margin: 20px 0; /* Spacing above and below the line */
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-wrapper">
+        <h4>Step Into the World of Trading! 💹</h4>
+        <p>Join us and unlock your trading journey today!</p>
+        
+        <hr> <!-- Horizontal line for separation -->
+
+        <form class="auth-register-form" method="POST" action="signup.php" id="signupForm">
+            <input type="hidden" name="_token" value="ZvNzEzEjAugtXzAlBkVzBSqX8pSUH3YYeEfSRrCN">
+
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" placeholder="Enter your first name" required>
+
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name" placeholder="Enter your last name" required>
+
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Choose a username" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Create a password" required>
+            <div id="requirements">
+                <p>Password must meet the following requirements:</p>
+                <ul>
+                    <li id="length" class="invalid">Minimum 8 characters</li>
+                    <li id="uppercase" class="invalid">At least 1 uppercase letter</li>
+                    <li id="lowercase" class="invalid">At least 1 lowercase letter</li>
+                    <li id="number" class="invalid">At least 1 number</li>
+                    <li id="special" class="invalid">At least 1 special character</li>
+                </ul>
+            </div>
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password" required>
+           <input type="text" style="display:none;" name="favorite_color" id="favorite_color" value="" />
+<div class="mb-1">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="terms" name="terms"
+tabindex="9" />
+<label class="form-check-label" for="terms">
+I agree to the <a href="./terms" target="_blank">Terms of
+Service</a> and
+<a href="./privacy-policy" target="_blank">Privacy Policy</a>
+</label>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="form-footer">
+            Already have an account? <a href="login">Login here</a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for password validation
+        const passwordInput = document.getElementById('password');
+        const confirmPasswordInput = document.getElementById('confirm_password');
+        const submitBtn = document.querySelector('button[type="submit"]'); 
+        const requirements = {
+            length: document.getElementById('length'),
+            uppercase: document.getElementById('uppercase'),
+            lowercase: document.getElementById('lowercase'),
+            number: document.getElementById('number'),
+            special: document.getElementById('special'),
+        };
+
+        passwordInput.addEventListener('input', validatePassword);
+
+        function validatePassword() {
+            const password = passwordInput.value;
+            const validLength = password.length >= 8;
+            const validUppercase = /[A-Z]/.test(password);
+            const validLowercase = /[a-z]/.test(password);
+            const validNumber = /[0-9]/.test(password);
+            const validSpecial = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+
+            requirements.length.classList.toggle('valid', validLength);
+            requirements.length.classList.toggle('invalid', !validLength);
+            
+            requirements.uppercase.classList.toggle('valid', validUppercase);
+            requirements.uppercase.classList.toggle('invalid', !validUppercase);
+            
+            requirements.lowercase.classList.toggle('valid', validLowercase);
+            requirements.lowercase.classList.toggle('invalid', !validLowercase);
+            
+            requirements.number.classList.toggle('valid', validNumber);
+            requirements.number.classList.toggle('invalid', !validNumber);
+            
+            requirements.special.classList.toggle('valid', validSpecial);
+            requirements.special.classList.toggle('invalid', !validSpecial);
+            
+            submitBtn.disabled = !(validLength && validUppercase && validLowercase && validNumber && validSpecial);
+        }
+
+        // Form submission validation
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            const password = passwordInput.value;
+            const confirmPassword = confirmPasswordInput.value;
+
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                e.preventDefault();
+            } else if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

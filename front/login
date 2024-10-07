@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+        h3 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-size: 14px;
+            color: #666;
+        }
+        input[type="tel"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input::placeholder {
+            font-size: 12px;
+            color: #999;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .forgot-password {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .forgot-password a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+        .form-footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .form-footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+         <h3>Welcome Aboard! 🌟</h3>
+        <form action="login.php" method="post">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    <div class="mb-1">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="remember" name="remember"
+                                    tabindex="3"  />
+                                <label class="form-check-label" for="remember"> Remember Me </label>
+                            </div>
+                        </div><br>
+                        
+            <button type="submit">Login</button>
+        </form>
+        <div class="form-footer">
+            Don't have an account? <a href="signup">Sign up here</a>
+    </div>
+    <div class="forgot-password">
+            <a href="mailto:teemtex.service@gmail.com?subject=Forgot%20Password&body=Hello%2C%0D%0AI%20have%20forgotten%20my%20password.%20Please%20assist%20me%20in%20getting%20it.%0D%0A%0D%0AThank%20you.">
+                Forgot Password?
+            </a>
+        </div>
+</body>
+</html>

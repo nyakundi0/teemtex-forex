@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Referrals</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0; /* Remove default margin */
+    }
+
+    .header {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 20px;
+      margin: 0; /* Remove default margin */
+    }
+
+    .table-container {
+      margin-top: 20px;
+      width: 100%; /* Full width */
+      padding: 0; /* Remove padding */
+    }
+
+    .table {
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%; /* Full width */
+    }
+
+    .no-referrals {
+      color: red;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: black;
+      color: white;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      display: none;
+      z-index: 1000;
+      cursor: pointer;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h5>Referrals</h5>
+    <a href="Dashboard.php" class="btn btn-primary">Dashboard</a>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <section class="cmn-section">
+      <div class="container-fluid table-container">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+              </tr>
+            </thead>
+            <tbody id="referralTableBody">
+              <!-- Referral data will be dynamically inserted here -->
+            </tbody>
+          </table>
+        </div>
+        <p class="no-referrals" style="display: block;">No referrals yet</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 TeemTex. All Rights Reserved | Trade at your comfort zone.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top" onclick="scrollToTop()">
+    <i class="bi bi-arrow-up-short"></i>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    // Example referral data
+    const referrals = [
+      // { date: "2024-09-20", name: "John Doe", email: "john@example.com", phone: "1234567890" }, // Uncomment to add sample referral
+    ];
+
+    function loadReferrals() {
+      const tableBody = document.getElementById("referralTableBody");
+      const noReferralsText = document.querySelector(".no-referrals");
+
+      // Clear existing table rows
+      tableBody.innerHTML = "";
+
+      if (referrals.length > 0) {
+        // Hide the "No referrals yet" message
+        noReferralsText.style.display = "none";
+
+        // Populate the table with referral data
+        referrals.forEach(referral => {
+          const row = `<tr>
+            <td>${referral.date}</td>
+            <td>${referral.name}</td>
+            <td>${referral.email}</td>
+            <td>${referral.phone}</td>
+          </tr>`;
+          tableBody.innerHTML += row;
+        });
+      } else {
+        // Show the "No referrals yet" message
+        noReferralsText.style.display = "block";
+      }
+    }
+
+    // Call the function to load referrals on page load
+    window.onload = loadReferrals;
+
+    // Show/Hide Back to Top Button
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('.back-to-top').fadeIn();
+      } else {
+        $('.back-to-top').fadeOut();
+      }
+    });
+
+    // Smooth scroll to top when button is clicked
+    function scrollToTop() {
+      $('html, body').animate({ scrollTop: 0 }, 600);
+    }
+  </script>
+
+</body>
+
+</html>
